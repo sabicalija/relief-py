@@ -29,15 +29,10 @@ def relief(input_path, output_path, depth_scale) -> None:
             depth_map = depth_map_to_numpy_array(file_path)
 
             params = DepthMapToSTLParams()
-            print(f"Params: {params.depth}")
             params.depth = depth_scale
 
-            print(f"Params: {params.depth}")
-
             mesh = depthmap_to_mesh(depth_map, params)
-
             mesh_filename = filename.replace('.png', '.stl')
-
             o3d.io.write_triangle_mesh(os.path.join(output_path, mesh_filename), mesh)
     pass
 
