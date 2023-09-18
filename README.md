@@ -10,8 +10,8 @@ The steps below will guide you through setting up and running Relief on your sys
 
 Relief relies on a few external dependencies:
 
-- open3d
-- numpy
+- [open3d](https://pypi.org/project/open3d/)
+- [numpy](https://pypi.org/project/numpy/)
 
 To install these, run the following command:
 
@@ -50,7 +50,7 @@ conda 22.11.1
 
 ```sh
 $ conda env create -f environment.yaml
-$ conda activate relief
+$ pyenv activate relief
 ```
 
 ## Running Relief
