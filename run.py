@@ -23,6 +23,9 @@ def relief(input_path, output_path, depth_scale) -> None:
     -------
     None
     """
+    if depth_scale == None:
+        depth_scale = float(1)
+
     for filename in os.listdir(input_path):
         if filename.endswith('.png'):
             file_path = os.path.join(input_path, filename)
