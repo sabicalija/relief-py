@@ -3,5 +3,6 @@ channels:
   - open3d-admin
   - defaults
 dependencies:
-  - open3d=0.15.2
-  - numpy=1.25.0
+  - open3d
+  - numpy
+  - pillow
